@@ -1,23 +1,102 @@
 [
   {
-    "title": "Software Developer",
-    "company": "TechCorp",
-    "location": "Bangalore",
-    "salary": "₹5,00,000",
-    "eligibility": "B.E/B.Tech CS",
-    "last_date": "March 10, 2025",
-    "skills": ["JavaScript", "React", "SQL"],
-    "apply_link": "https://apply-link.com"
+    "title": "Data Engineer",
+    "company": "Lumbini Elite Solutions & Services",
+    "location": "Bengaluru",
+    "salary": "Not Disclosed",
+    "eligibility": "B.Tech/B.E. in Any Specialization",
+    "last_date": "Not Mentioned",
+    "skills": [
+      "Python",
+      "PL SQL",
+      "MS SQL Server",
+      "AWS GLUE",
+      "AWS RedShift",
+      "APACHE SUPERSET",
+      "MS SSIS",
+      "DRWID",
+      "PENTAHO",
+      "KAFKA",
+      "Grafana"
+    ],
+    "apply_link": "https://www.naukri.com/job-listings-data-engineer-for-bangalore-location-lumbini-elite-solutions-services-bengaluru-0-to-2-years-180225017530?utmcampaign=androidjd&utmsource=share&src=sharedjd"
   },
   {
-    "title": "Frontend Engineer",
-    "company": "WebInnovate",
-    "location": "Chennai",
-    "salary": "₹4,80,000",
-    "eligibility": "B.E/B.Tech IT, MCA",
-    "last_date": "March 15, 2025",
-    "skills": ["HTML", "CSS", "JavaScript", "Vue.js"],
+    "title": "Python Developer Internship",
+    "company": "Innovatexiq Solutions",
+    "location": "Bengaluru",
+    "salary": "Not Disclosed",
+    "eligibility": "Any Graduate",
+    "last_date": "Not Mentioned",
+    "skills": ["Python", "SQL", "NoSQL", "Django", "Flask", "Git"],
     "apply_link": "https://apply-now.com"
+  },
+  {
+    "title": "Data Engineer/Python Developer",
+    "company": "Titan Company",
+    "location": "Bengaluru",
+    "salary": "Not Disclosed",
+    "eligibility": "Any Graduate",
+    "last_date": "Not Mentioned",
+    "skills": ["Python", "SQL", "ETL Pipelines", "PySpark"],
+    "apply_link": "https://www.naukri.com/job-listings-data-engineer-python-developer-titan-company-bengaluru-0-to-1-years-170125013686?utmcampaign=androidjd&utmsource=share&src=sharedjd"
+},
+{
+  "title": "IICS/IDMC Developer",
+  "company": "Qualitest Group",
+  "location": "India",
+  "salary": "Not Disclosed",
+  "eligibility": "Not Mentioned",
+  "last_date": "Not Mentioned",
+  "skills": [
+      "IICS Cloud Data Integration",
+      "Cloud Application Integration",
+      "Informatica PowerCenter",
+      "Snowflake",
+      "SQL",
+      "Unix Scripting",
+      "AWS",
+      "Azure"
+  ],
+  "apply_link": "https://careers.qualitestgroup.com/job/Bangalore-IICSIDMC-Developer-560045/35821644/?isComingFromApp=true"
+},
+{
+  "title": "Immediate Opening in Software Testing For Freshers",
+  "company": "Infomats Technologies",
+  "location": "Chennai",
+  "salary": "2.5-4.5 LPA",
+  "eligibility": "B.Sc, B.Tech/B.E, BCA, MCA, M.Tech, MS/M.Sc (2014-2023 Passouts)",
+  "last_date": "Not Mentioned",
+  "skills": ["Software Testing", "Automation Testing", "Manual Testing"],
+  "apply_link": "https://www.naukri.com/job-listings-immediate-opening-in-software-testing-for-freshers-infomats-technologies-chennai-0-to-0-years-170225013497?utmcampaign=androidjd&utmsource=share&src=sharedjd"
+},
+{
+  "title": "Back End Support Engineer (Java)",
+  "company": "Secfix",
+  "location": "Kolkata, Mumbai, New Delhi, Hyderabad, Pune, Chennai, Bengaluru",
+  "salary": "Not Disclosed",
+  "eligibility": "Any Graduate, Any Postgraduate",
+  "last_date": "Not Mentioned",
+  "skills": [
+      "Java",
+      "Spring Boot",
+      "SQL",
+      "PostgreSQL",
+      "TypeScript",
+      "REST API",
+      "AWS",
+      "Google Cloud",
+      "Microsoft Azure",
+      "Linux",
+      "Jira",
+      "Software Testing",
+      "Azure Active Directory"
+  ],
+  "apply_link": "https://www.naukri.com/job-listings-back-end-support-engineer-java-secfix-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-1-to-4-years-180225504069?utmcampaign=androidjd&utmsource=share&src=sharedjd"
 }
+
+
+
+
 
 ]
