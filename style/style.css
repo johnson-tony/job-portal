@@ -1,0 +1,190 @@
+
+.heading{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+/* Job Cards Layout */
+#job-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    gap: 20px; /* Adds space between cards */
+    justify-content: center; /* Centers the cards */
+}
+
+.job-card {
+    width: 250px; /* Fixed width for consistency */
+    min-height: 250px; /* Ensures all cards have a good height */
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); /* Better shadow */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin: 13px ; /* Ensures elements inside are well spaced */
+}
+
+.job-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.job-card h3 {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job-card p {
+    margin: 3px 0;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.job-card a {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.job-card a:hover {
+    background: #0056b3;
+}
+
+/* Interview Cards Layout */
+#interview-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping */
+    gap: 20px; /* Adds space between cards */
+    justify-content: center; /* Centers the cards */
+}
+
+.interview-card {
+    width: 250px; /* Fixed width for consistency */
+    min-height: 250px; /* Ensures all cards have a good height */
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); /* Better shadow */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin:15px;
+}
+
+.icon {
+    width: 30px;  /* Set width to make the image smaller */
+    height: 30px; /* Set height accordingly to maintain aspect ratio */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: transform 0.3s; /* Optional for smooth hover effect */
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* Optional: slightly enlarge when hovered */
+  }
+
+
+
+.interview-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.interview-card h3 {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.interview-card p {
+    margin: 3px 0;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .job-card, .interview-card {
+        width: calc(33.33% - 20px); /* Three cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-card, .interview-card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .job-card, .interview-card {
+        width: 100%; /* Single column on small devices */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222; /* Dark background */
+    color: white;
+}
+.job-card, .interview-card {
+    margin: 5px; /* Reduce from 13px and 15px to 8px */
+}
+
+/* Features Section */
+/* Features Section with Background Color */
+.features {
+    background-color: #f8f9fa; /* Light background color */
+    padding-top: 20px; /* Reduced top padding */
+    padding-bottom: 20px; /* Reduced bottom padding */
+    border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+}
+
+/* Text inside Features Section */
+.features h2 {
+    color: #333; /* Dark text color */
+}
+
+.features h4 {
+    color: #007bff; /* Blue color for headings */
+}
+/* Latest Job Opportunities Section */
+.latest-jobs {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center-align the heading */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.latest-jobs h2 {
+    font-size: 28px; /* Adjust font size */
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .latest-jobs h2 {
+        font-size: 24px;
+    }
+}
+footer {
+    margin-top: 30px; /* Increased space between footer and last content */
+}
+
+
+

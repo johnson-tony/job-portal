@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>JobHubX - Home</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">JobHubX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+              <li class="nav-item"><a class="nav-link" href="interviews.html">Walk-In Interviews</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero text-center bg-primary text-white py-5">
+        <h1>Welcome to JobHubX</h1>
+        <p>Your Gateway to Fresh Job Opportunities</p>
+        <a href="jobs.html" class="btn btn-light">Explore Jobs</a>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features text-center py-5">
+        <h2>What We Offer</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Latest Job Listings</h4>
+            <p>Find fresh job opportunities posted regularly.</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Walk-In Interviews</h4>
+            <p>Get updates on walk-in interviews happening near you.</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Easy Navigation</h4>
+            <p>Simple and user-friendly interface to access job listings and interviews.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Job Listings -->
+      <section class="latest-jobs py-5">
+        <h2>Latest Job Opportunities</h2>
+        <div id="job-list">
+          <!-- Dynamic job cards will appear here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 JobHubX. All rights reserved.</p>
+      <div>
+        <a href="https://www.linkedin.com/in/jobhubx" target="_blank"><img src="assets/link.png" class="icon"></a>
+        <a href="https://t.me/JobHubX" target="_blank"><img src="assets/tele.jpeg" class="icon"></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

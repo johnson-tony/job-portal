@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Software Developer",
+    "company": "TechCorp",
+    "location": "Bangalore",
+    "salary": "₹5,00,000",
+    "eligibility": "B.E/B.Tech CS",
+    "last_date": "March 10, 2025",
+    "skills": ["JavaScript", "React", "SQL"],
+    "apply_link": "https://apply-link.com"
+  },
+  {
+    "title": "Frontend Engineer",
+    "company": "WebInnovate",
+    "location": "Chennai",
+    "salary": "₹4,80,000",
+    "eligibility": "B.E/B.Tech IT, MCA",
+    "last_date": "March 15, 2025",
+    "skills": ["HTML", "CSS", "JavaScript", "Vue.js"],
+    "apply_link": "https://apply-now.com"
+}
+
+]
