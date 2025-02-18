@@ -42,62 +42,46 @@ function loadJobs() {
 
 // Function to fetch and display interview listings
 function loadInterviews() {
-  const interviews = [
-      {
-          "id": 1,
-          "title": "Software Engineer",
-          "company": "Tech Solutions Pvt Ltd",
-          "location": "Bangalore, India",
-          "date": "2025-02-20",
-          "time": "10:00 AM",
-          "venue": "Tech Park, Bangalore",
-          "contact": "+91 9876543210",
-          "eligibility": "B.E/B.Tech/MCA (2023 & 2024 batch)"
-      },
-      {
-          "id": 2,
-          "title": "Frontend Developer",
-          "company": "Innovatech",
-          "location": "Chennai, India",
-          "date": "2025-02-22",
-          "time": "2:00 PM",
-          "venue": "IT Park, Chennai",
-          "contact": "+91 9123456789",
-          "eligibility": "Any degree with web development experience"
-      }
-  ];
+  fetch("data/interviews.json")  // Path to the interviews JSON file
+      .then((response) => response.json())
+      .then((interviews) => {
+          let interviewsContainer = document.getElementById("interview-list");
+          if (!interviewsContainer) return;
+          interviewsContainer.innerHTML = ""; // Clear existing content
 
-  let interviewsContainer = document.getElementById("interview-list");
-  if (!interviewsContainer) return;
-  interviewsContainer.innerHTML = ""; // Clear existing content
+          const currentDate = new Date(); // Get today's date
 
-  const currentDate = new Date(); // Get today's date
+          // Filter out expired interviews
+          const validInterviews = interviews.filter(
+              (interview) => new Date(interview.date) >= currentDate
+          );
 
-  // Filter out expired interviews
-  const validInterviews = interviews.filter(
-      (interview) => new Date(interview.date) >= currentDate
-  );
+          if (validInterviews.length === 0) {
+              interviewsContainer.innerHTML = "<p>No upcoming interviews available.</p>";
+              return;
+          }
 
-  if (validInterviews.length === 0) {
-      interviewsContainer.innerHTML = "<p>No upcoming interviews available.</p>";
-      return;
-  }
-
-  validInterviews.forEach((interview) => {
-      let interviewElement = document.createElement("div");
-      interviewElement.classList.add("interview-card");
-      interviewElement.innerHTML = `
-          <h3>${interview.title}</h3>
-          <p><strong>Company:</strong> ${interview.company}</p>
-          <p><strong>Location:</strong> ${interview.location}</p>
-          <p><strong>Date:</strong> ${formatDate(interview.date)}</p> <!-- Formatted Date -->
-          <p><strong>Time:</strong> ${interview.time}</p>
-          <p><strong>Venue:</strong> ${interview.venue}</p>
-          <p><strong>Contact:</strong> ${interview.contact}</p>
-          <p><strong>Eligibility:</strong> ${interview.eligibility}</p>
-      `;
-      interviewsContainer.appendChild(interviewElement);
-  });
+          validInterviews.forEach((interview) => {
+              let interviewElement = document.createElement("div");
+              interviewElement.classList.add("interview-card");
+              interviewElement.innerHTML = `
+                  <h3>${interview.title}</h3>
+                  <p><strong>Company:</strong> ${interview.company}</p>
+                  <p><strong>Location:</strong> ${interview.location}</p>
+                  <p><strong>Date:</strong> ${formatDate(interview.date)}</p> <!-- Formatted Date -->
+                  <p><strong>Time:</strong> ${interview.time}</p>
+                  <p><strong>Venue:</strong> ${interview.venue}</p>
+                  <p><strong>Contact:</strong> ${interview.contact}</p>
+                  <p><strong>Eligibility:</strong> ${interview.eligibility}</p>
+              `;
+              interviewsContainer.appendChild(interviewElement);
+          });
+      })
+      .catch((error) => {
+          console.error("Error loading interviews:", error);
+          document.getElementById("interview-list").innerHTML =
+              "<p>Failed to load interviews. Please try again later.</p>";
+      });
 }
 
 // Load content when the page is opened
